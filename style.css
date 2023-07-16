@@ -1,3 +1,12 @@
+body{
+    background-image: url("./img/bg.jpeg");
+    margin: 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    min-height: 3350px;
+}
+
 .active {
     border-bottom: 3px solid;
     border-color: #fe0f58;
