@@ -24,4 +24,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.scrollY > 0) {
         Nav.classList.add('nav-bg');
     }
+    
 });
