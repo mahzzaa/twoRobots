@@ -3,9 +3,8 @@ body {
   margin: 0;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   min-height: 3350px;
-  width: -webkit-fill-available;
 }
 
 /* nav */
@@ -137,7 +136,7 @@ body {
   }
 
   .planet{
-    z-index: -10;
+    z-index: -20;
     top: 72px;
     border-radius: 100%;
   }
