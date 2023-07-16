@@ -24,7 +24,7 @@ body{
     background-color: #191645;
     box-shadow: 2px 5px 25px #121031;
 }
-/* w-768 */
+/* mobile */
 @media (max-width: 768px) {
     nav {
         width: 100%;
@@ -140,3 +140,44 @@ body{
     }
 }
 
+/* tablets */
+
+@media only screen and (min-width: 600px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+
+    .right-text
+    {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        padding-left: 15px;
+        line-height: 150%;
+    }
+
+    .right-text h1{
+        font-size: x-large;
+    }
+
+    .right-text p{
+        font-size: small;
+        padding-left: 12px;
+    }
+
+    .header .planet{
+        display: block;
+        z-index: -10;
+        top: 12px;
+     }
+
+    .robots img{
+        width: 532px;
+    }
+}
