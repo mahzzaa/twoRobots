@@ -136,13 +136,7 @@ body {
   }
 
   .planet{
-    z-index: -20;
-    top: 72px;
-    border-radius: 100%;
-  }
-
-  .planet :focus{
-    box-shadow: 2px 5px 25px white;
+    display: none;
   }
 
   .robots {
@@ -196,14 +190,9 @@ body {
   }
 
   .header .planet {
-    display: block;
+    display: inline;
     z-index: -10;
     top: 102px;
-  }
-
-  .planet :focus {
-    border-radius: 100%;
-    box-shadow: 2px 2px 50px;
   }
 
   .robots img {
