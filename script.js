@@ -19,4 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         close.style.display = 'none';
         navlink.style.left = '-100%';
     });
+
+    // Check scroll position on page load
+    if (window.scrollY > 0) {
+        Nav.classList.add('nav-bg');
+    }
 });

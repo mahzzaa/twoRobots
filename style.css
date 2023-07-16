@@ -20,6 +20,10 @@ body{
     display: none;
 }
 
+.nav-bg {
+    background-color: #191645;
+    box-shadow: 2px 5px 25px #121031;
+}
 /* w-768 */
 @media (max-width: 768px) {
     nav {
