@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto 100%;
     min-height: 3350px;
+    width: -webkit-fill-available;
 }
 
 .active {
@@ -142,7 +143,16 @@ body{
 
 /* tablets */
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 1200px) and (min-height: 769px)  {
+    /* body{
+        background-image: url("./img/bg.jpeg");
+        margin: 0;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        min-height: 2300px;
+    } */
+
     .header{
         display: flex;
         flex-direction: row;
@@ -179,5 +189,76 @@ body{
 
     .robots img{
         width: 532px;
+    }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1460px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        margin-right: 140px;
+    }
+
+    .right-text
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        padding-left: 0px;
+        line-height: 150%;
+    }
+
+    .right-text h1{
+        font-size: xx-large;
+    }
+
+    .right-text p{
+        font-size: medium;
+        padding-left: 0px;
+    }
+
+    .header .planet{
+        display: block;
+        z-index: -10;
+        top: 200px;
+        right: 5px;
+     }
+
+    .email{
+        margin-right: 60px;
+        margin-left: 100px;
+        width: 50%;
+    }
+  
+    .email-input p{
+        margin-top: 0px;
+        margin-bottom: 4px;
+        margin-left: 0px;
+    }
+
+    .email-input input{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .email-input button{
+        padding: 30px;
+    }
+
+    .email-input button svg{
+        width: 20px;
+    }
+
+    .robots img{
+        width: 820px;
+        margin-right: 20px;
     }
 }
