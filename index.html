@@ -30,12 +30,11 @@
         <div class="right-nav flex items-end justify-center">
             <!-- items -->
             <ul class="nav-link flex items-center text-xs">
-                <li class="mx-4 py-1.5 active">Home</li>
-                <li class="mx-4 py-1.5">Cards</li>
-                <li class="mx-4 py-1.5">How to Play</li>
-                <li class="mx-4 py-1.5">About us</li>
-                <li class="mx-4 py-1.5">Blog</li>
-                <li class="mx-4 py-1.5">FAQ</li>
+                <li class="mx-4 py-1.5 active"><a onclick="scrollToSection('#home')" href="#home">Home</a></li>
+                <li class="mx-4 py-1.5"><a onclick="scrollToSection('#play')" href="#play">How to Play</a></li>
+                <li class="mx-4 py-1.5"><a onclick="scrollToSection('#about')" href="#about">About us</a></li>
+                <li class="mx-4 py-1.5"><a onclick="scrollToSection('#selearnction1')" href="#learn">Learn More</a></li>
+                <li class="mx-4 py-1.5"><a onclick="scrollToSection('#FAQ')" href="#FAQ">FAQ</a></li>
             </ul>
 
             <!-- button -->
@@ -73,7 +72,7 @@
     </nav>
     <!-- header -->
 
-    <div class="header text-white flex justify-center items-center mt-28">
+    <div id="Home" class="header text-white flex justify-center items-center mt-28">
         <!-- right text -->
         <div class="right-text">
             <h1 class="font-sans text-5xl font-extrabold ">
@@ -132,7 +131,7 @@
     </div>
     <!-- about -->
 
-    <div class="about flex items-center justify-center relative">
+    <div id="about" class="about flex items-center justify-center relative">
         <div class="cards flex items-center justify-center w-1/2">
             <div class="flex flex-col mx-4 mb-10">
                 <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95 mb-4"
@@ -186,7 +185,7 @@
     </div>
 
     <!-- how to play -->
-    <div
+    <div id="play"
         class="ToPlay 2xl:flex xl:flex lg:flex md:flex sm:flex  items-center justify-center mx-12 my-12 text-white my-10">
         <!-- left text -->
         <div class="text-play lg:w-1/2 md:w-1/2 lg:ml-12 md:ml-0 relative lg:pl-32 md:pl-0">
@@ -251,7 +250,7 @@
     </div>
     <!-- learn more -->
 
-    <div
+    <div id="learn"
         class="Learn flex flex-col justify-center items-center 2xl:flex-row xl:flex-row lg:flow-row md:flex-row mx-3 md:mx-5 lg:mx-0">
         <!-- learn flash card -->
         <div
@@ -358,7 +357,7 @@
 
 
     <!-- FAQ -->
-    <div class=" flex justify-center items-center">
+    <div id="FAQ" class=" flex justify-center items-center">
         <div
             class="2xl:my-44 xl:my-44 lg:my-44 md:my-44 my-32 mx-10 text-white text-just gap-6 grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 grid-cols-3 flex justify-center items-center text-center 2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-2/3">
             <p class="my-8 font-semibold text-xl hover:text-[#2d1e5b] cursor-pointer">FAQs</p>

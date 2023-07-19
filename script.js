@@ -39,4 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    // smoot scroll
+    function scrollToSection(sectionId) {
+        const element = document.querySelector(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+
 });
