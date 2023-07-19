@@ -291,6 +291,12 @@ body {
     text-align: center;
     width: 50%;
   }
+
+  .about-text .planet{
+    position:absolute;
+    z-index: -1;
+    top: 12px;
+  }
 }
 
 /* desktop */
