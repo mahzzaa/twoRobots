@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
   min-height: 3350px;
 }
 
