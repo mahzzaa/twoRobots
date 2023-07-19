@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
 </head>
@@ -133,13 +135,17 @@
     <div class="about flex items-center justify-center relative">
         <div class="cards flex items-center justify-center w-1/2">
             <div class="flex flex-col mx-4 mb-10">
-                <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95 mb-4" src="./img/0power-gloves.png" alt="">
-                <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95" src="./img/2ice-blast.png" alt="">
+                <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95 mb-4"
+                    src="./img/0power-gloves.png" alt="">
+                <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95"
+                    src="./img/2ice-blast.png" alt="">
             </div>
 
             <div class="flex flex-col mx-4 mt-10">
-                <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95 mb-4" src="./img/2sudden-abduction.png" alt="">
-                <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95" src="./img/4sentry-gunship.png" alt="">
+                <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95 mb-4"
+                    src="./img/2sudden-abduction.png" alt="">
+                <img class="w-44 shadow-lg shadow-black transition duration-100 hover:scale-95"
+                    src="./img/4sentry-gunship.png" alt="">
             </div>
         </div>
 
@@ -180,7 +186,8 @@
     </div>
 
     <!-- how to play -->
-    <div class="ToPlay 2xl:flex xl:flex lg:flex md:flex sm:flex  items-center justify-center mx-12 my-12 text-white my-10">
+    <div
+        class="ToPlay 2xl:flex xl:flex lg:flex md:flex sm:flex  items-center justify-center mx-12 my-12 text-white my-10">
         <!-- left text -->
         <div class="text-play lg:w-1/2 md:w-1/2 lg:ml-12 md:ml-0 relative lg:pl-32 md:pl-0">
             <p class="text-[#7d8de1] text-xs font-bold uppercase my-6 text-just tracking-widest">How to play</p>
@@ -234,13 +241,113 @@
         </div>
 
         <!-- robots flash card -->
-        <div class="flash 2xl:flex xl:flex lg:flex md:flex sm:flex 2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full flex items-center justify-center lg:mr-16 md:mr-4 md:ml-10  ">
-            <img class="mt-20 mr-2 lg:ml-5 md:ml-3 2xl:w-56 xl:w-56 lg:w-56 md:w-44 w-32  transition duration-100 hover:scale-95" src="./img/aboutleftimg.png" alt="">
-            <img class="mb-20 ml-2 lg:mr-5 md:mr-3 2xl:w-56 xl:w-56 lg:w-56 md:w-44 w-32 transition duration-100 hover:scale-95" src="./img/aboutrightimg.png" alt="">
+        <div
+            class="flash 2xl:flex xl:flex lg:flex md:flex sm:flex 2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full flex items-center justify-center lg:mr-16 md:mr-4 md:ml-10  ">
+            <img class="mt-20 mr-2 lg:ml-5 md:ml-3 2xl:w-56 xl:w-56 lg:w-56 md:w-44 w-32  transition duration-100 hover:scale-95"
+                src="./img/aboutleftimg.png" alt="">
+            <img class="mb-20 ml-2 lg:mr-5 md:mr-3 2xl:w-56 xl:w-56 lg:w-56 md:w-44 w-32 transition duration-100 hover:scale-95"
+                src="./img/aboutrightimg.png" alt="">
         </div>
     </div>
     <!-- learn more -->
 
+    <div class="Learn flex flex-col justify-center items-center 2xl:flex-row xl:flex-row lg:flow-row md:flex-row mx-3 md:mx-5 lg:mx-0">
+        <!-- learn flash card -->
+        <div class="flex justify-center items-center order-2 my-5 md:mx-5">
+            <img class="2xl:w-56 xl:w-56 lg:w-56 md:w-42 w-32 mt-20 mx-2 transition duration-75 hover:scale-95 "
+                src="./img/learnright.png" alt="">
+            <img class="2xl:w-56 xl:w-56 lg:w-56 md:w-42 w-32 mb-20 mx-2 transition duration-75 hover:scale-95 "
+                src="./img/learnleft.png" alt="">
+        </div>
+
+        <!-- learn more text -->
+        <div class="flex flex-col justify-center items-start text-white mx-2 my-5">
+            <p class="text-[#7d8de1] text-start text-xs font-bold uppercase my-6 text-just tracking-widest">
+                LEARN MORE
+            </p>
+
+            <h1 class="font-sans text-4xl lg:font-bold md:font-semibold my-5">
+                Frequently Asked Questions
+            </h1>
+
+            <p class="my-8 text-just text-lg">Have another question? Shoot us an <a href="moonlike.tech@gmail.com" class="hover:text-gray-600 text-just">email.</a></p>
+
+            <!-- accordion -->
+
+            <div id="accordion-collapse" data-accordion="collapse">
+                <h2 id="accordion-collapse-heading-1">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left
+                         text-white bg-[#161135f5]" data-accordion-target="#accordion-collapse-body-1"
+                        aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                        <span>Where can I purchase the game?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-1" class="hidden max-h-min overflow-hidden transition-max-h duration-200 ease-in-out w-full max-w-sm"
+                    aria-labelledby="accordion-collapse-heading-1">
+                    <div
+                        class="pl-5 bg-transparent ml-8 my-2 border-l-2 border-white  border border-t-0 border-r-0 border-b-0">
+                        <p class="mb-2 text-white">Flowbite is an open-source library of
+                            We recently just finished our Kickstarter campaign and are funded! If you are interested in
+                            pre-ordering the game, you can do so here. Also, stay tuned for updates by reading our blog!
+                        </p>
+                    </div>
+                </div>
+                <h2 id="accordion-collapse-heading-2">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left
+                    text-white bg-[#161135f5]" data-accordion-target="#accordion-collapse-body-2" aria-expanded="true"
+                        aria-controls="accordion-collapse-body-2">
+                        <span>What about player support? Card count? Is the game even fun?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-2" class="hidden max-h-min overflow-hidden transition-max-h duration-200 ease-in-out w-full max-w-sm"
+                    aria-labelledby="accordion-collapse-heading-2">
+                    <div
+                        class="pl-5 bg-transparent ml-8 my-2 border-l-2 border-white  border border-t-0 border-r-0 border-b-0">
+                        <p class="mb-2 text-white">
+                            Two Robots supports 2-4 players. The box comes with 4 Salvager Robot cards, 18 Event Cards,
+                            and 100 Action cards. The Action cards consist of Attack, Defense, and Robot Part cards. We
+                            designed it to be the perfect blend of fun, fast-paced, easy to learn, and strategic card
+                            game!
+                        </p>
+                    </div>
+                </div>
+                <h2 id="accordion-collapse-heading-3">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left
+                    text-white bg-[#161135f5]" data-accordion-target="#accordion-collapse-body-3" aria-expanded="true"
+                        aria-controls="accordion-collapse-body-3">
+                        <span>What is the Storyline of Two Robots?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-3" class="hidden max-h-min overflow-hidden transition-max-h duration-200 ease-in-out w-full max-w-sm"
+                    aria-labelledby="accordion-collapse-heading-3">
+                    <div
+                        class="pl-5 bg-transparent ml-8 my-2 border-l-2 border-white  border border-t-0 border-r-0 border-b-0">
+                        <p class="mb-2 text-white">
+                            Our team wrote up a really awesome backstory to allow our game to be much more immersive. We
+                            are also planning on releasing other games and products in the future in the same universe
+                            so stay tuned!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <!-- footer -->
 </body>
 

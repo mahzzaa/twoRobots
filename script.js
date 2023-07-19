@@ -24,5 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.scrollY > 0) {
         Nav.classList.add('nav-bg');
     }
-    
+
+
+    // accordion
+
+    const accordionItems = document.querySelectorAll('[data-accordion="collapse"] [data-accordion-target]');
+
+    accordionItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const target = document.querySelector(item.getAttribute('data-accordion-target'));
+            target.classList.toggle('hidden');
+            const expanded = target.getAttribute('aria-expanded') === 'true';
+            target.setAttribute('aria-expanded', !expanded);
+        });
+    });
+
 });

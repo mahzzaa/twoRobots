@@ -11,6 +11,15 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%; /* Position it below the button */
+  left: 0;
+  width: 100%;
+}
+
 /* nav */
 
 .active {
